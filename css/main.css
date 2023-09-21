@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box; /*版面寬度不會因為增加padding，影響版面寬度*/
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Monospace;
+    font-size: 13px;
+    line-height: 24px;
+    overscroll-behavior: none; /*屬性可以讓滾動嵌套时父滾動不觸發*/
+}
+
+a {
+    color: #ff0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.leftStart,
+.leftStop {
+    background-color: #fa0;
+    display: inline-block;
+    line-height: 50px;
+    border: 1px solid white;
+}
+
+.rightStart,
+.rightStop {
+    background-color: #0af;
+    display: inline-block;
+    line-height: 50px;
+    border: 1px solid white;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    position: absolute;
+    padding-left: 1px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.leftStart {
+    top: 0;
+    left: 145px;
+}
+
+.leftStop {
+    top: 0;
+    left: 205px;
+}
+
+.rightStart {
+    top: 0;
+    left: 265px;
+}
+
+.rightStop {
+    top: 0;
+    left: 325px;
+}
+
+.btnStart {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnStop {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnStart:hover {
+    background-color: green;
+    text-decoration: none;
+    transition: all 1s; 
+}
+
+.btnStop:hover {
+    background-color: #f00;
+    text-decoration: none;
+    transition: all 1s; /*all 指從btnStart到btnStart:hover多出來的樣式全部做轉場所需要的時間 */
+}

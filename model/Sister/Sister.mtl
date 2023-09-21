@@ -1,0 +1,278 @@
+# 3ds Max Wavefront OBJ Exporter v0.99 - (c)2007 guruware
+# File Created: 12.09.2023 03:31:20
+
+newmtl TRASCRIS
+	Ns 100.0000
+	Ni 1.5000
+	d 0.5000
+	Tr 0.5000
+	Tf 0.5000 0.5000 0.5000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0510 0.1961 0.0039
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
+
+newmtl TRASAZUL
+	Ns 22.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.4000 0.8824 0.8431
+	Ks 0.1600 0.1600 0.1600
+	Ke 0.0000 0.0000 0.0000
+	map_Ka .\TRASPISC.jpg
+	map_Kd .\TRASPISC.jpg
+
+newmtl TRASPAIN
+	Ns 46.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.4000 0.7000 0.7000
+	Ks 0.2800 0.2800 0.2800
+	Ke 0.0000 0.0000 0.0000
+	map_Ka .\TRASPAIN.jpg
+	map_Kd .\TRASPAIN.jpg
+
+newmtl TRASWHTE
+	Ns 15.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.9608 0.9529 0.9412
+	Ks 0.2200 0.2200 0.2200
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
+
+newmtl TRASMETA
+	Ns 82.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5176 0.5333 0.5804
+	Ks 0.9500 0.9500 0.9500
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
+
+newmtl TRASGRN
+	Ns 80.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.2118 0.3216 0.1529
+	Ks 0.7200 0.7200 0.7200
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
+
+newmtl TRASWOOD
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.7725 0.6980 0.5804
+	Ks 0.3100 0.3100 0.3100
+	Ke 0.0000 0.0000 0.0000
+	map_Ka .\TRASWOOD.jpg
+	map_Kd .\TRASWOOD.jpg
+	map_bump .\TRASWOOD.jpg
+	bump .\TRASWOOD.jpg
+
+newmtl TRASBLAC
+	Ns 54.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0039 0.0078 0.0314
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl TRASVENT
+	Ns 100.0000
+	Ni 1.5000
+	d 0.6000
+	Tr 0.4000
+	Tf 0.6000 0.6000 0.6000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0314 0.0627 0.0235
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
+
+newmtl TRASBUTA
+	Ns 76.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.9176 0.3804 0.0863
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
+
+newmtl TRASCHIM
+	Ns 64.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.9608 0.9686 0.9843
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka .\TRASCHIM.jpg
+	map_Kd .\TRASCHIM.jpg
+	map_refl .\lakeREM.jpg
+
+newmtl TRASRADA
+	Ns 64.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5333 0.6353 0.8471
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
+
+newmtl TRASFARO
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 0.7294 0.0039
+	Ks 0.7400 0.7400 0.7400
+	Ke 0.8000 0.5835 0.0031
+
+newmtl wire_153228153
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6000 0.8941 0.6000
+	Kd 0.6000 0.8941 0.6000
+	Ks 0.3500 0.3500 0.3500
+
+newmtl TRASORO
+	Ns 100.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.7020 0.3961 0.0000
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
+
+newmtl TRASAQUA
+	Ns 25.0000
+	Ni 1.5000
+	d 0.2000
+	Tr 0.8000
+	Tf 0.2000 0.2000 0.2000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.4000 0.7000 0.7000
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl TRASGRAD
+	Ns 69.0000
+	Ni 1.5000
+	d 0.5500
+	Tr 0.4500
+	Tf 0.5500 0.5500 0.5500 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.4588 0.8118 0.7843
+	Ks 0.5800 0.5800 0.5800
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Tex__2_Gradient.tga
+	map_Kd Tex__2_Gradient.tga
+
+newmtl wire_177026088
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6941 0.1020 0.3451
+	Kd 0.6941 0.1020 0.3451
+	Ks 0.3500 0.3500 0.3500
+
+newmtl TRASNMED
+	Ns 46.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.4000 0.7000 0.7000
+	Ks 0.2800 0.2800 0.2800
+	Ke 0.0000 0.0000 0.0000
+	map_Ka .\TRANSMED.jpg
+	map_Kd .\TRANSMED.jpg
+	map_refl .\lakeREM.jpg
+
+newmtl TRASME2
+	Ns 40.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.7000 0.7000 0.7000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka .\TRANSME2.jpg
+	map_Kd .\TRANSME2.jpg
+	map_refl .\lakeREM.jpg
+
+newmtl TRASWHTM
+	Ns 64.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 1.0000 1.0000 1.0000
+	Ke 0.0000 0.0000 0.0000
+	map_refl .\lakeREM.jpg
