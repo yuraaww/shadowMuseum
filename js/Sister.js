@@ -54,7 +54,7 @@ function initScene() {
 
 // ===========  渲染器構建 ========================
 function initRenderer(){
-    renderer = new THREE.WebGLRenderer(); 
+    renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(width, height);
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -65,7 +65,7 @@ function initRenderer(){
 
 // ===============  初始化攝像頭 ================
 function initCamera() {
-  camera = new THREE.PerspectiveCamera(70, width / height, 0.1, 20000);   
+  camera = new THREE.PerspectiveCamera(70, width / height, 0.1, 20000);
   camera.position.set(400, 0, 0);
   camera.lookAt(scene.position)
 }
@@ -73,22 +73,22 @@ function initCamera() {
 // ==================== 添加軌道控制器 =========================
 function initControl() {
   let orbitControls = new OrbitControls(camera, renderer.domElement);
-  orbitControls.target = new THREE.Vector3(0, 10, 0) 
-  orbitControls.autoRotate = false 
+  orbitControls.target = new THREE.Vector3(0, 10, 0)
+  orbitControls.autoRotate = false
   renderScene();
 
   function renderScene() {
-    var clock = new THREE.Clock() 
-    var delta = clock.getDelta() 
-    orbitControls.update(delta) 
+    var clock = new THREE.Clock()
+    var delta = clock.getDelta()
+    orbitControls.update(delta)
     requestAnimationFrame(renderScene);
   }
 }
 // ================== 燈光 =============================
 function initLights() {
     scene.add(new THREE.AmbientLight(0x0c0c0c));
-    const skyColor = 0xb1e1ff 
-    const groundColor = 0xffffff 
+    const skyColor = 0xb1e1ff
+    const groundColor = 0xffffff
     const intensity = 1
     const light = new THREE.HemisphereLight(skyColor, groundColor, intensity)
     scene.add(light)
@@ -143,10 +143,10 @@ function getMesh(s, arr, name = '') {
 
 function initObjModel(){
     // 創建 Group，繼承自 Object3D
-    groupTop = new THREE.Object3D(); 
+    groupTop = new THREE.Object3D();
     groupBottom = new THREE.Object3D();
-    groupLeft = new THREE.Object3D(); 
-    groupRight = new THREE.Object3D(); 
+    groupLeft = new THREE.Object3D();
+    groupRight = new THREE.Object3D();
 
     //若載入OBJ模型成功時，會來處理這行函式
     let onProgress = function (xhr) {
@@ -174,9 +174,9 @@ function initObjModel(){
     mtlLoader.setPath('../model/Sister/');
      // Sister 1
     mtlLoader.load('Sister.mtl', function (materials) {
-        materials.preload(); 
+        materials.preload();
         var objLoader = new OBJLoader();
-        objLoader.setCrossOrigin('Anonymous'); 
+        objLoader.setCrossOrigin('Anonymous');
         objLoader.setMaterials(materials);
         objLoader.setPath('../model/Sister/');
         objLoader.load(
@@ -189,13 +189,13 @@ function initObjModel(){
                     }
                 });
 
-            
+
                 shipObj1 = obj;
-               
+
                 groupTop.position.set(0, 150, 0);
-                
+
                 groupTop.scale.set(0.01, 0.01, 0.01);
-                
+
                 groupTop.rotation.set(0, 0, 0);
                 groupTop.add(shipObj1);
 
@@ -225,7 +225,7 @@ function initObjModel(){
 
                 //模型縮放
                 shipObj2 = obj;
-               
+
                 //groupRight 添加 shipObj2 模型
                 groupBottom.position.set(0, -150, 0);
                 groupBottom.scale.set(0.01, 0.01, 0.01);
@@ -250,14 +250,14 @@ function initObjModel(){
             'Sister.obj',
             function (obj) {
                 //遍歷子節點，開啟每個子節點的陰影模式。
-                obj.traverse(function (child) {                   
+                obj.traverse(function (child) {
                     if (child.isMesh) {
                         child.castShadow = true;
                     }
                 });
 
                 //模型縮放
-                shipObj3 = obj;               
+                shipObj3 = obj;
 
                 //groupLeft 添加 shipObj3 模型
                 groupLeft.position.set(0, 0, 150);
@@ -283,14 +283,14 @@ function initObjModel(){
             'Sister.obj',
             function (obj) {
                 //遍歷子節點，開啟每個子節點的陰影模式。
-                obj.traverse(function (child) {                   
+                obj.traverse(function (child) {
                     if (child.isMesh) {
                         child.castShadow = true;
                     }
                 });
 
                 //模型縮放
-                shipObj4 = obj;              
+                shipObj4 = obj;
 
                 //groupRight 添加 shipObj4 模型
                 groupRight.position.set(0, 0, -150);
@@ -315,9 +315,10 @@ function initAnimate(){
 
 // ===================== 等比縮放 ==========================
 function onWindowResize() {
-    camera.aspect = width / height;
+    camera.aspect = window.innerWidth / window.innerHeight;
+    //投影機的矩陣資料更新
     camera.updateProjectionMatrix();
-    renderer.setSize( width, height);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 }
 // ========================================================
 
@@ -336,7 +337,7 @@ function initAll() {
     initLights();
     initObjModel();
     //.querySelector 找到元素( class="leftstart")
-    document.querySelector('.leftStart').addEventListener('click', handleleftStartClick); 
+    document.querySelector('.leftStart').addEventListener('click', handleleftStartClick);
     document.querySelector('.leftStop').addEventListener('click', handleleftStopClick);
     document.querySelector('.rightStart').addEventListener('click', handlerightStartClick);
     document.querySelector('.rightStop').addEventListener('click', handlerightStopClick);
@@ -400,9 +401,9 @@ function initArrowKeydown() {
 // 控制左右轉按鈕
 function handleleftStartClick() {
     if (!leftButton) return;
-    groupTop.rotation.y    -= 0.02; 
-    groupBottom.rotation.y -= 0.02; 
-    groupLeft.rotation.y   -= 0.02; 
+    groupTop.rotation.y    -= 0.02;
+    groupBottom.rotation.y -= 0.02;
+    groupLeft.rotation.y   -= 0.02;
     groupRight.rotation.y  -= 0.02;
 
     renderer.render(scene, camera);

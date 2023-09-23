@@ -315,9 +315,10 @@ function initAnimate(){
 
 // ===================== 等比縮放 ==========================
 function onWindowResize() {
-    camera.aspect = width / height;
+    camera.aspect = window.innerWidth / window.innerHeight;
+    //投影機的矩陣資料更新
     camera.updateProjectionMatrix();
-    renderer.setSize( width, height);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 }
 // ========================================================
 
