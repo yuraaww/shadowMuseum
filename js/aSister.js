@@ -99,7 +99,7 @@ function initControl() {
     // 滑鼠靈敏度
     orbitControls.enableDamping = true; // 啟用阻尼效果，阻尼:讓滑鼠不那麼靈敏
     orbitControls.dampingFactor = 0.25; // 阻尼系數，
-    orbitControls.autoRotate = false;    // 不啟用自動旋轉
+    orbitControls.autoRotate = true;    // 啟用自動旋轉
     // 要有效果需要在 render() 處做 update 才會有效果
 
     renderScene();

@@ -1,0 +1,22 @@
+# Exported from Nomad Sculpt
+
+newmtl 梯子
+ map_Kd Screenshot_20231009_233250_Samsung_Notes.jpg
+
+newmtl red
+ map_Kd Screenshot_20231009_232500_Pinterest.jpg
+
+newmtl black
+ map_Kd Screenshot_20231009_232213_Samsung_Notes.jpg
+
+newmtl nantai_venus
+ map_Kd 材質natai_venus.jpg
+
+newmtl 貨
+ map_Kd Boat1貨.jpg
+
+newmtl 起重機
+ map_Kd penup_20231120_104059.jpg
+
+newmtl 船底
+ map_Kd penup_20231120_095703.jpg

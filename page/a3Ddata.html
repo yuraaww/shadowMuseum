@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 影子計畫 </title>
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- 支援舊瀏覽器能夠讀取js的模組 -->
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <!-- 使用json 的形式來定義瀏覽器中的全局模組，json格式: key:value -->
+  <!-- "imports":  別名:檔案位置 -->
+  <script type="importmap">
+	{
+		"imports": {
+			"three": "../three.js/build/three.module.js",
+			"three/examples/": "../three.js/examples/",
+			"three/src/": "../three.js/src/"
+		}
+	}
+	</script>
+</head>
+
+<body>
+  <div id="container">
+    <nav>
+      <ul>
+        <li class="logo"><a href="../index.html" target="_blank">影子計畫</a></li>
+      </ul>
+    </nav>
+  </div>
+  <script type="module" src="../js/a3Ddata.js"></script>
+</body>
+
+</html>

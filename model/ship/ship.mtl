@@ -1,0 +1,10 @@
+# Exported from Nomad Sculpt
+
+newmtl 船身
+ map_Kd old-wood-background-dark-wooden-abstract-texture.jpg
+
+newmtl 繩子_1
+ map_Kd PENUP_20231126_224954.png
+
+newmtl 船帆_7
+ map_Kd SmartSelect_20231009_232759_Samsung_Notes.jpg
