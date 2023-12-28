@@ -228,7 +228,7 @@ function initObjModel(){
                     });
                 }
 
-                obj.children[0].geometry.center();
+                // obj.children[0].geometry.center();
 
                 obj.position.x = shipObj1_position_x;
                 obj.position.y = shipObj1_position_y;
@@ -345,9 +345,9 @@ window.onload = function () {
     shipObj1_rotation_y = 0;
     shipObj1_rotation_z = 0;
     
-    shipObj1_scale_x = 20;    
-    shipObj1_scale_y = 20; 
-    shipObj1_scale_z = 20; 
+    shipObj1_scale_x = 30;    
+    shipObj1_scale_y = 30; 
+    shipObj1_scale_z = 30; 
 
     initAll();
 }

@@ -192,8 +192,8 @@ function initObjModel(){
 
                 shipObj1 = obj;
 
-                groupTop.position.set(0, 150, 0);
-                groupTop.scale.set(20, 20, 20);
+                groupTop.position.set(0, 160, 0);
+                groupTop.scale.set(12, 12, 12);
                 groupTop.rotation.set(0, 0, 0);
                 groupTop.add(shipObj1);
 
@@ -225,8 +225,8 @@ function initObjModel(){
                 shipObj2 = obj;
 
                 //groupRight 添加 shipObj2 模型
-                groupBottom.position.set(0, -150, 0);
-                groupBottom.scale.set(20, 20, 20);
+                groupBottom.position.set(0, -160, 0);
+                groupBottom.scale.set(12, 12, 12);
                 groupBottom.rotation.set(3, 0, 0);
                 groupBottom.add(shipObj2);
 
@@ -237,7 +237,7 @@ function initObjModel(){
         );
     });
 
-    // boat f 
+    // boat f 3
     mtlLoader.load('boat f.mtl', function (materials) {
         materials.preload(); //材質預先載入
         var objLoader = new OBJLoader();
@@ -258,8 +258,8 @@ function initObjModel(){
                 shipObj3 = obj;
 
                 //groupLeft 添加 shipObj3 模型
-                groupLeft.position.set(0, 0, 150);
-                groupLeft.scale.set(20, 20, 20);
+                groupLeft.position.set(0, 0, 160);
+                groupLeft.scale.set(12, 12, 12);
                 groupLeft.rotation.set(1.5, 0, 0);
                 groupLeft.add(shipObj3);
 
@@ -270,7 +270,7 @@ function initObjModel(){
         );
     });
 
-    // boat f 
+    // boat f 4
     mtlLoader.load('boat f.mtl', function (materials) {
         materials.preload(); //材質預先載入
         var objLoader = new OBJLoader();
@@ -291,8 +291,8 @@ function initObjModel(){
                 shipObj4 = obj;
 
                 //groupRight 添加 shipObj4 模型
-                groupRight.position.set(0, 0, -150);
-                groupRight.scale.set(20, 20, 20);
+                groupRight.position.set(0, 0, -160);
+                groupRight.scale.set(12, 12, 12);
                 groupRight.rotation.set(4.5, 0, 0);
                 groupRight.add(shipObj4);
 
@@ -399,10 +399,10 @@ function initArrowKeydown() {
 // 控制左右轉按鈕
 function handleleftStartClick() {
     if (!leftButton) return;
-    groupTop.rotation.y    -= 0.02;
-    groupBottom.rotation.y -= 0.02;
-    groupLeft.rotation.y   -= 0.02;
-    groupRight.rotation.y  -= 0.02;
+    groupTop.rotation.y    -= 0.1;
+    groupBottom.rotation.y -= 0.1;
+    groupLeft.rotation.y   -= 0.1;
+    groupRight.rotation.y  -= 0.1;
 
     renderer.render(scene, camera);
     LeftRequestID = requestAnimationFrame(handleleftStartClick);
@@ -418,10 +418,10 @@ function handleleftStopClick() {
 function handlerightStartClick() {
     if (!rightButton) return;
     // 然後讓組圍繞 z 軸旋轉;
-    groupTop.rotation.z    -= 0.02; //使模型圍繞 z 軸旋轉
-    groupBottom.rotation.z -= 0.02; //使模型圍繞 z 軸旋轉
-    groupLeft.rotation.z   -= 0.02; //使模型圍繞 z 軸旋轉
-    groupRight.rotation.z  -= 0.02; //使模型圍繞 z 軸旋轉
+    groupTop.rotation.z    -= 0.05; //使模型圍繞 z 軸旋轉
+    groupBottom.rotation.z -= 0.05; //使模型圍繞 z 軸旋轉
+    groupLeft.rotation.z   -= 0.05; //使模型圍繞 z 軸旋轉
+    groupRight.rotation.z  -= 0.05; //使模型圍繞 z 軸旋轉
 
     renderer.render(scene, camera);
     RightRequestID = requestAnimationFrame(handlerightStartClick);

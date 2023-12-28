@@ -192,9 +192,9 @@ function initObjModel(){
 
                 shipObj1 = obj;
 
-                groupTop.position.set(0, 150, 0);
+                groupTop.position.set(0, 200, 0);
 
-                groupTop.scale.set(7, 7, 7);
+                groupTop.scale.set(6, 6, 6);
 
                 groupTop.rotation.set(0, 0, 0);
                 groupTop.add(shipObj1);
@@ -227,8 +227,8 @@ function initObjModel(){
                 shipObj2 = obj;
 
                 //groupRight 添加 shipObj2 模型
-                groupBottom.position.set(0, -150, 0);
-                groupBottom.scale.set(7, 7, 7);
+                groupBottom.position.set(0, -100, 0);
+                groupBottom.scale.set(6, 6, 6);
                 groupBottom.rotation.set(3, 0, 0);
                 groupBottom.add(shipObj2);
 
@@ -260,8 +260,8 @@ function initObjModel(){
                 shipObj3 = obj;
 
                 //groupLeft 添加 shipObj3 模型
-                groupLeft.position.set(0, 0, 150);
-                groupLeft.scale.set(7, 7, 7);
+                groupLeft.position.set(0, 0, 200);
+                groupLeft.scale.set(6, 6, 6);
                 groupLeft.rotation.set(1.5, 0, 0);
                 groupLeft.add(shipObj3);
 
@@ -293,8 +293,8 @@ function initObjModel(){
                 shipObj4 = obj;
 
                 //groupRight 添加 shipObj4 模型
-                groupRight.position.set(0, 0, -150);
-                groupRight.scale.set(7, 7, 7);
+                groupRight.position.set(0, 0, -200);
+                groupRight.scale.set(6, 6, 6);
                 groupRight.rotation.set(4.5, 0, 0);
                 groupRight.add(shipObj4);
 
