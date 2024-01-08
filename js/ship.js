@@ -192,9 +192,9 @@ function initObjModel(){
 
                 shipObj1 = obj;
 
-                groupTop.position.set(0, 200, 0);
+                groupTop.position.set(0, 135, 0);
 
-                groupTop.scale.set(6, 6, 6);
+                groupTop.scale.set(4, 4, 4);
 
                 groupTop.rotation.set(0, 0, 0);
                 groupTop.add(shipObj1);
@@ -227,8 +227,8 @@ function initObjModel(){
                 shipObj2 = obj;
 
                 //groupRight 添加 shipObj2 模型
-                groupBottom.position.set(0, -100, 0);
-                groupBottom.scale.set(6, 6, 6);
+                groupBottom.position.set(0, -135, 0);
+                groupBottom.scale.set(4, 4, 4);
                 groupBottom.rotation.set(3, 0, 0);
                 groupBottom.add(shipObj2);
 
@@ -260,8 +260,8 @@ function initObjModel(){
                 shipObj3 = obj;
 
                 //groupLeft 添加 shipObj3 模型
-                groupLeft.position.set(0, 0, 200);
-                groupLeft.scale.set(6, 6, 6);
+                groupLeft.position.set(0, 0, 135);
+                groupLeft.scale.set(4, 4, 4);
                 groupLeft.rotation.set(1.5, 0, 0);
                 groupLeft.add(shipObj3);
 
@@ -293,8 +293,8 @@ function initObjModel(){
                 shipObj4 = obj;
 
                 //groupRight 添加 shipObj4 模型
-                groupRight.position.set(0, 0, -200);
-                groupRight.scale.set(6, 6, 6);
+                groupRight.position.set(0, 0, -135);
+                groupRight.scale.set(4, 4, 4);
                 groupRight.rotation.set(4.5, 0, 0);
                 groupRight.add(shipObj4);
 
@@ -401,10 +401,10 @@ function initArrowKeydown() {
 // 控制左右轉按鈕
 function handleleftStartClick() {
     if (!leftButton) return;
-    groupTop.rotation.y    -= 0.02;
-    groupBottom.rotation.y -= 0.02;
-    groupLeft.rotation.y   -= 0.02;
-    groupRight.rotation.y  -= 0.02;
+    groupTop.rotation.y    -= 0.05;
+    groupBottom.rotation.y -= 0.05;
+    groupLeft.rotation.y   -= 0.05;
+    groupRight.rotation.y  -= 0.05;
 
     renderer.render(scene, camera);
     LeftRequestID = requestAnimationFrame(handleleftStartClick);
@@ -420,10 +420,10 @@ function handleleftStopClick() {
 function handlerightStartClick() {
     if (!rightButton) return;
     // 然後讓組圍繞 z 軸旋轉;
-    groupTop.rotation.z    -= 0.02; //使模型圍繞 z 軸旋轉
-    groupBottom.rotation.z -= 0.02; //使模型圍繞 z 軸旋轉
-    groupLeft.rotation.z   -= 0.02; //使模型圍繞 z 軸旋轉
-    groupRight.rotation.z  -= 0.02; //使模型圍繞 z 軸旋轉
+    groupTop.rotation.z    -= 0.05; //使模型圍繞 z 軸旋轉
+    groupBottom.rotation.z -= 0.05; //使模型圍繞 z 軸旋轉
+    groupLeft.rotation.z   -= 0.05; //使模型圍繞 z 軸旋轉
+    groupRight.rotation.z  -= 0.05; //使模型圍繞 z 軸旋轉
 
     renderer.render(scene, camera);
     RightRequestID = requestAnimationFrame(handlerightStartClick);

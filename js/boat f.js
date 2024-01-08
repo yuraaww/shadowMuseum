@@ -399,10 +399,10 @@ function initArrowKeydown() {
 // 控制左右轉按鈕
 function handleleftStartClick() {
     if (!leftButton) return;
-    groupTop.rotation.y    -= 0.1;
-    groupBottom.rotation.y -= 0.1;
-    groupLeft.rotation.y   -= 0.1;
-    groupRight.rotation.y  -= 0.1;
+    groupTop.rotation.y    -= 0.075;
+    groupBottom.rotation.y -= 0.075;
+    groupLeft.rotation.y   -= 0.075;
+    groupRight.rotation.y  -= 0.075;
 
     renderer.render(scene, camera);
     LeftRequestID = requestAnimationFrame(handleleftStartClick);
@@ -418,10 +418,10 @@ function handleleftStopClick() {
 function handlerightStartClick() {
     if (!rightButton) return;
     // 然後讓組圍繞 z 軸旋轉;
-    groupTop.rotation.z    -= 0.05; //使模型圍繞 z 軸旋轉
-    groupBottom.rotation.z -= 0.05; //使模型圍繞 z 軸旋轉
-    groupLeft.rotation.z   -= 0.05; //使模型圍繞 z 軸旋轉
-    groupRight.rotation.z  -= 0.05; //使模型圍繞 z 軸旋轉
+    groupTop.rotation.z    -= 0.075; //使模型圍繞 z 軸旋轉
+    groupBottom.rotation.z -= 0.075; //使模型圍繞 z 軸旋轉
+    groupLeft.rotation.z   -= 0.075; //使模型圍繞 z 軸旋轉
+    groupRight.rotation.z  -= 0.075; //使模型圍繞 z 軸旋轉
 
     renderer.render(scene, camera);
     RightRequestID = requestAnimationFrame(handlerightStartClick);
